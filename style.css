@@ -91,7 +91,7 @@ a{
  /* Flower vase  */
  #home img{
      height: 140vh;
-     position: relative;
+     position: absolute;
      left: 10%;
      top: 8%;
      z-index: 3;
@@ -828,5 +828,10 @@ footer img{
 @font-face {
     font-family: "voyage";
     src: url(./fonts/Voyage-Bold.ttf);
+    font-weight: 900;
+}
+@font-face {
+    font-family: "Sunshower Dreams";
+    src: url(./fonts/SunshowerDreams.otf);
     font-weight: 900;
 }
