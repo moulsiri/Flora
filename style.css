@@ -815,7 +815,7 @@ footer img{
     }
     
 }
-@font-face {
+/* @font-face {
     font-family: "gilroy";
     src: url(./fonts/Gilroy-Medium.otf);
     font-weight: 100;
@@ -829,4 +829,4 @@ footer img{
     font-family: "voyage";
     src: url(./fonts/Voyage-Bold.ttf);
     font-weight: 900;
-}
+} */
