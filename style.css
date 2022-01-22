@@ -404,7 +404,7 @@ a{
     height: inherit;
     display:inline-block;
     width:25%;
-    background-color:#fff;
+    /* background-color:#fff; */
     margin-right: 3em;
     background-position: center;
     position:relative;
@@ -423,6 +423,7 @@ a{
 }
 #gallery::-webkit-scrollbar{
     display:none;
+    scroll-behavior: smooth;
 }
 
 .gbtn{

@@ -354,5 +354,12 @@ Cards.forEach(elm =>{
   
 })
 
+// Horizontal Scroll on click of a button in gallery 
+let scrollBtn=document.querySelector("#sliderBtn");
+scrollBtn.addEventListener("click",function(){
+ document.querySelector("#gallery").scrollLeft+=10;
+})
+
+
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
