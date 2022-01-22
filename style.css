@@ -1,0 +1,832 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"voyage";
+}
+html,body{
+    height:100%;
+    background-color: var(--bg);
+    width:100%;
+}
+:root{
+    --bg:#fa7e7e;
+    --darktxt:#B00013;
+    --txt:tomato;
+    --ftrTxt:rgb(24, 24, 24);
+
+}
+a{
+    text-decoration:none;
+}
+#main{
+    width:100%;
+    /* min-height: 100vh; */
+    /* background-color: var(--bg); */
+}
+/* Home section  */
+#home{
+    height:100vh;
+    overflow: hidden;
+    width:100%;
+    position: relative;
+    background-color:var(--bg);
+}
+/* Navbar  */
+#nav{
+    height: 8vh;
+    /* background-color:#fff; */
+    display:flex;
+    justify-content:space-between;
+    padding:0 4em;
+    align-items:flex-end;
+    font-size: 15px;
+}
+#nav h3{
+    color:#fff;
+    font-size: 1.8em;
+    /* letter-spacing: .1em; */
+}
+#nrt{
+    display:flex;
+    width:40%;
+    justify-content:space-between;
+    /* align-items:fle; */
+    /* background-color: yellow; */
+}
+#nlinks{
+    display:flex;
+    align-items:center;
+    /* background-color:red; */
+}
+#nlinks a{
+    color:#fff;
+    margin-right: 2em;
+    /* letter-spacing:.05em; */
+    font-weight: 700;
+
+}
+#nrt i{
+    color:#fff;
+}
+#nicons {
+    display:flex;
+    align-items:center;
+    /* background-color: red; */
+}
+#nicons i{
+    margin-left: .8em;
+}
+#nicons i:last-child{
+    background-color: #fff;
+    color:var(--bg);
+    padding:.5em;
+    font-size: .8em;
+    border-radius: 50%;
+}
+#nicons i:first-child{
+    margin-right: 4em;
+}
+
+ /* Flower vase  */
+ #home img{
+     height: 140vh;
+     position: relative;
+     left: 10%;
+     top: 8%;
+     z-index: 3;
+     /* margin-left: .6em;
+     margin-top: -6.5em; */
+ }
+
+ /* Main Heading  */
+ #htext{
+     position:absolute;
+     font-size: 160px;
+     color:#fff;
+     /* background-color: aquamarine; */
+     top:30%;
+     left:5%;
+ }
+ #htext h1{
+     display: inline;
+     font-weight: 100;
+ }
+ #htext h1:first-child{
+     position: relative;
+     z-index: 4;
+ }
+
+ /* Home paragraph  */
+ #helm{
+     position: absolute;
+     width: 30%;
+     /* height: 0%; */
+     /* background-color: red; */
+     font-size: 12px;
+     bottom:15%;
+     z-index: 9;
+     left: 5%;
+     color: #fff;
+
+ }
+ #helm p{
+     font-family: "gilroy";
+     letter-spacing: .1em;
+     font-weight: 100;
+     line-height: 1.5em;
+ }
+
+ /* explore button  */
+ #explore{
+     width: 100%;
+     display: flex;
+     align-items: center;
+     margin-top: 2em;
+ }
+ #explore i{
+     padding: 1em;
+     background-color: #fff;
+     color:var(--bg);
+     border-radius:50%;
+ }
+ #explore p{
+     margin-left:1em;
+ }
+ #explore p span{
+     font-weight: 700;
+     font-family: 'gilroy';
+ }
+ /* Language Option  */
+ #hlng{
+     position:absolute;
+     bottom:5%;
+     display:flex;
+     right:5%;
+ }
+ #hlng h3{
+     font-family:"gilroy";
+     font-size: .8em;
+     margin-right: 1em;
+     color:#fff;
+     font-weight: 500;
+     letter-spacing: .1em;
+ }
+
+
+ /* Vocal massage "Magical Things ...." section  */
+
+ #mgthng{
+     border: 1px solid transparent;
+    min-height: 100vh;
+    width:100%;
+    background-color: var(--bg);
+    font-size: 15px;
+    position:relative;
+
+ }
+ /* austhectic to sophicticated connecting line  */
+ #mcnct{
+     margin:0 auto;
+     /* background-color:yellow; */
+     display:flex;
+     align-items:center;
+     flex-direction:column;
+     width: 80%;
+     margin-top: 4em;
+ }
+ #mcnct h4{
+     font-size: 3em;
+     color:#fff;
+     opacity:0;
+     font-weight:100;
+ }
+ #mline{
+     width:0;
+     height:1px;
+     background-color: #fff;
+ }
+ /* .cnctTxt{
+     font-size: 3em;
+     color:#fff;
+ } */
+ #mcnct svg{
+     width: 25%;
+     /* opacity: 0; */
+ }
+ #mcnct svg path{
+    stroke-dasharray: 1065px;
+    stroke-dashoffset: 1065px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+ }
+
+ #cnctline {
+     /* width: 80%; */
+     /* background-color:rgb(79, 182, 182); */
+     display:flex;
+     align-items:center;
+     margin-top: 2em;
+     justify-content:center;
+ }
+ #cnctline h3{
+     display:inline;
+     font-size:1.5em;
+     color:#fff;
+     opacity: 0;
+     margin:0 1em;
+ }
+
+ #cnctline h3:first-child span{
+     font-family: "Sunshower Dreams";
+     letter-spacing: .2em;
+ }
+
+ /* middle text  */
+ .mgtxt{
+     opacity: 0;
+ }
+ #mtxt{
+     margin:0 auto;
+     margin-top:3em;
+     width: fit-content;
+     /* background-color:red; */
+     padding:2em;
+     font-size: 17px;
+     margin-bottom:3em;
+     position:relative;
+     z-index: 2;
+
+ }
+ #mtxt>h3{
+     font-size: 5em;
+     color:#fff;
+     font-weight:100;
+ }
+ #mtxt>h3:first-child{
+     margin-left: .8em;
+ }
+ #mtxt h1{
+     font-size:9em;
+     color:#fff;
+     margin-top:-.5em;
+     margin-left:.1em;
+ }
+ #mtxt h1:nth-child(4){
+     margin-left: .4em;
+ }
+ #mtxt h3:nth-child(5){
+    margin-left: .65em;
+    font-size: 7em;
+    margin-top:-.3em;
+}
+ #mcirtxt{
+     border:1px solid #fff;
+     border-radius:50%;
+     width: 0em;
+     height: 0em;
+     display:flex;
+     position:relative;
+     /* opacity:0; */
+     justify-content:center;
+     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
+     align-items:center;
+     color:#fff;
+     font-size: 20px;
+ }
+ #mcirtxt h3 {
+     font-size: 3em;
+     font-weight:100;
+     position:absolute;
+     transform:translate(-50%,-50%);
+     top:10%;
+     left:50%;
+     opacity: 0;
+    
+
+ }
+
+ /* middle image of magical things  */
+ #mimg{
+     width:50%;
+     height: 90vh;
+     position:absolute;
+     top:53%;
+     left:50%;
+     transform:translate(-50%,-50%);
+     /* background-color: yellow; */
+     overflow: hidden;
+ }
+ #mimg img{
+     width:100%;
+     height:100%;
+     object-fit:cover;
+     /* filter: blur(5px); */
+     /* opacity:0; */
+
+ }
+ #mimgov{
+     width: 100%;
+     height:100%;
+     background-color:var(--bg);
+     position:absolute;
+     top:0;
+     transition:cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
+     /* border-right: 2px solid #fff; */
+     left:0;
+ }
+ /* footer in this section  */
+ #mfooter{
+     width:0%;
+     height:20vh;
+     /* background-color:red; */
+     margin-top: 6em;
+     margin: 0 auto;
+     border-top: 1px solid #fff;
+     display:flex;
+     padding:2em;
+     justify-content:space-between;
+     opacity: 0;
+
+ }
+
+ .mftxt h4{
+     font-size: 2em;
+     opacity: 0;
+     color:var(--darktxt);
+
+ }
+.mftxt p{
+    font-family:'gilroy';
+    font-size: .8em;
+    color:#fff;
+    margin-top: .5em;
+    opacity: 0;
+
+}
+.mftxt:last-child{
+    text-align: right;
+}
+
+/* Product show case gallery  */
+#proShow{
+    width:100%;
+    min-height:100vh;
+    background-color: var(--bg);
+    position:relative;
+    padding-bottom:2em;
+}
+#proShow h1{
+    font-size:5em;
+    font-weight:100;
+    color:#fff;
+    margin-left: 1.2em;
+    opacity: 0;
+}
+#gallery{
+    /* background-color: yellow; */
+    overflow-x: auto;
+    margin-left:15em ;
+    margin-top:3em;
+    /* display:flex; */
+    position: relative;
+    /* align-items: center; */
+
+}
+#slider{
+    height:70vh;
+    /* background-color:red; */
+    /* margin-top:3em; */
+    white-space: nowrap;
+    position: relative;
+
+}
+.pelm{
+    height: inherit;
+    display:inline-block;
+    width:25%;
+    background-color:#fff;
+    margin-right: 3em;
+    background-position: center;
+    position:relative;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    /* opacity: 0; */
+}
+.ovPelm{
+    height: inherit;
+    width: 100%;
+    background-color: var(--bg);
+    position: absolute;
+    top:0;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    left:0;
+}
+#gallery::-webkit-scrollbar{
+    display:none;
+}
+
+.gbtn{
+    padding:.2em;
+border:2px solid #fff;
+color:#fff;
+font-weight:100;
+cursor: pointer;
+border-radius: 50%;
+font-size: 25px;
+}
+#sliderBtn{
+    display: initial;
+    position:absolute;
+    opacity: 0;
+left:10%;
+top:65%;
+
+
+}
+#upArrow{
+    display:none;
+}
+/* Images in gallerySection  */
+.pelm:nth-child(5){
+    background-image: url(https://images.unsplash.com/photo-1523224042829-4731dd15a3bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1376&q=80);
+}
+.pelm:nth-child(2){
+    background-image: url(https://images.unsplash.com/photo-1533616688419-b7a585564566?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80);
+}
+.pelm:nth-child(3){
+    background-image: url(https://images.unsplash.com/photo-1525247923538-c105d2dd605d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=402&q=80);
+}
+.pelm:nth-child(4){
+    background-image: url(https://images.unsplash.com/photo-1554355204-1891654d7de1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+}
+.pelm:nth-child(1){
+    background-image: url(https://images.unsplash.com/photo-1527609635833-38e4a5f7c941?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+}
+.pelm:nth-child(6){
+    background-image: url(https://images.unsplash.com/photo-1617111490936-07b47eafdcd4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=376&q=80);
+}
+.pelm:nth-child(7){
+    background-image: url(https://images.unsplash.com/photo-1528568731601-7ebad185aae2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80);
+}
+.pelm:nth-child(8){
+    background-image: url(https://images.unsplash.com/photo-1600427259115-af406ab4d035?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+}
+.pelm:nth-child(9){
+    background-image: url(https://images.unsplash.com/photo-1595753076458-19a4fc7b9150?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=360&q=80);
+}
+.pelm:nth-child(10){
+    background-image: url(https://images.unsplash.com/photo-1615654673360-29898e4f857f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+}
+
+
+/* Footer  */
+footer{
+    height:100vh;
+    width:100%;
+    padding:2em 4em;
+    position:relative;
+    overflow: hidden;
+    background-color:#fff;
+}
+#ftxt1 p{
+    font-family:'gilroy';
+    color:var(--ftrTxt);
+    opacity: 0;
+    letter-spacing:.15em;
+
+}
+#ftxt1 p span{
+    color: var(--ftrTxt);
+    font-family: 'gilroy';
+}
+#ftxt1 h3{
+    font-size: 4em;
+    color:var(--txt);
+    font-weight: 100;
+    margin-top: -.2em;
+    opacity: 0;
+
+
+}
+#ftxt{
+    margin-top: 2em;
+    /* background-color: yellow; */
+    width: 30%;
+    
+}
+#ftxt p{
+    font-family:'gilroy';
+    color:var(--ftrTxt);
+    font-size: 1.2em;
+    letter-spacing:.1em;
+    /* text-align: left; */
+    opacity: 0;
+}
+#ftxt p span{
+    font-family: "gilroy";
+}
+#ftrSpan{
+    color:var(--txt);
+    font-family:'gilroy';
+    font-weight: 600;
+    font-size: 1.3em;
+}
+#ftrSpan span{
+    color:var(--txt);
+    font-family:'gilroy';
+}
+#fmail{
+    /* background-color: aqua; */
+    margin-top: 2em;
+    width: fit-content;
+}
+#fmail h2{
+    font-size: 6em;
+    font-weight:100;
+    color:var(--txt);
+    opacity: 0;
+}
+#fmail input{
+    border:none;
+    outline: none;
+    border-bottom: 1px solid #797878;
+    padding:1em 0;
+    width: 0%;
+    opacity: 0;
+
+}
+#fmail input::placeholder{
+    letter-spacing: .1em;
+    font-family:'gilroy';
+}
+footer img{
+    position:absolute;
+    bottom:0;
+    right:-10%;
+    height: 80vh;
+}
+
+/* ON Click  */
+/* Full Navbar  */
+#fnav{
+    height:100vh;
+    width:100%;
+    background-color:#D10017;
+    position:absolute;
+    top:-100%;
+    left:0;
+    z-index: 99;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    will-change: transition;
+    display:flex;
+}
+#fnav>i{
+    position:absolute;
+    color:#fff;
+    padding:.5em;
+    background-color: #00000038;
+    border-radius:50%;
+    cursor: pointer;
+    bottom:10%;
+    right:10%;
+}
+#fnlft{
+    height:100vh;
+    width:60%;
+    /* background-color:#530E15; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    counter-reset: section;
+}
+.link a{
+    color:#fff;
+    text-decoration:none;
+    
+    font-size: 4em;
+    
+}
+#fnlft a::after{
+    counter-increment: section;
+    content:"0"counter(section);
+    font-size: .15em;
+    font-family: "gilroy";
+    margin-left: .5em;
+    letter-spacing: .2em;
+}
+#fnrt{
+    display:initial;
+    height:100vh;
+    width:40%;
+    background-color:#00000028;
+}
+.link:first-child{
+    margin-top: -6em;
+}
+.link{
+    /* background-color: yellow; */
+    /* margin-top: 1em; */
+    margin-left:5em;
+    /* position:relative; */
+    transform-origin: (-50%,-50%);
+    padding:.5em;
+
+
+}
+.fnimg{
+    width: 8em;
+    height: 10em;
+    background-color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    will-change: transition;
+    position:absolute;
+    z-index: 7;
+    top:0;
+    left:0;
+    background-position: center;
+    background-size:cover ;
+}
+.link:nth-child(1) .fnimg:nth-child(2){
+    background-image: url(https://images.unsplash.com/photo-1460039230329-eb070fc6c77c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    
+}
+.link:nth-child(2) .fnimg:nth-child(2){
+    background-image: url(https://images.unsplash.com/photo-1615654673360-29898e4f857f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    
+}
+.link:nth-child(3) .fnimg:nth-child(2){
+    background-image: url(https://images.unsplash.com/photo-1617111490936-07b47eafdcd4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=376&q=80);
+    
+}
+.link:nth-child(4) .fnimg:nth-child(2){
+    background-image: url(https://images.unsplash.com/photo-1533616688419-b7a585564566?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    
+}
+@media(max-width:500px){
+    /* Home  */
+    #nav{
+        padding: 0 2em;
+        height: 6vh;
+        font-size: 12px;
+    }
+    #nlinks{
+        display: none;
+    }
+    #nicons i:first-child{
+        margin-right:2em;
+    }
+    #nicons i:last-child{
+        margin-left: none;
+    }
+    #nrt{
+        justify-content: flex-end;
+    }
+    #home img{
+        height:84vh;
+        /* transform:translate(-50%,-50%); */
+        top:29%;
+        left:-5%;
+        /* margin-left:-2.4em;
+        margin-top:9.5em; */
+        
+    }
+    #htext{
+        font-size:50px;
+        top:50%;
+    }
+    #helm{
+        font-size: 11px;
+        width:55%;
+        top:15%;
+    }
+    #hlng{
+        bottom:3%;
+    }
+
+    /* Magical things section  */
+    #mgthng{
+        display:flex;
+        justify-content:space-between;
+        flex-direction:column;
+        /* background-color: yellow; */
+
+    }
+    #mcnct{
+        font-size: 6px;
+        /* margin-top:3em; */
+    }
+    #cnctline{
+        height: 3vh;
+        /* background-color: yellow; */
+    }
+    #mtxt{
+        font-size: 6px;
+        margin-top:0em;
+        /* background-color: yellow; */
+    }
+    #mtxt h1{
+        margin-top:0;
+        /* font-size: 8em; */
+    }
+    #mcirtxt{
+        /* width:2em;
+        height:2em; */
+        margin-top:1em;
+
+    }
+    #mcirtxt h3{
+        font-size:1.8em;
+    }
+    #mimg{
+        width:38vh;
+        height:50vh;
+        top:50%;
+
+    }
+    #mfooter{
+        font-size:7px;
+        height: 10vh;
+    }
+
+    /* Product Showcase  */
+    #proShow{
+        border:1px solid transparent;
+        font-size: 6px;
+    }
+    #proShow h1:first-child{
+        margin-top: 1em;
+    }
+    #sliderBtn{
+        /* display:none; */
+        top:90%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+    /* #upArrow{
+        display: initial;
+       
+    } */
+    #gallery{
+        width:80%;
+        margin:0 auto;
+        margin-top:4em;
+        height: 65vh;
+    }
+    .pelm{
+        /* display: block; */
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    
+
+    /* Footer  */
+    footer{
+        padding:2em 2em;
+        font-size: 11px;
+    }
+    footer img{
+        height:40vh;
+
+    }
+    #fmail h2{
+        font-size: 4em;
+    }
+    #ftxt{
+        width: 50%;
+        
+    }
+    /* Full NavBar  */
+    .link{
+        margin-left: 3em;
+
+    }
+    #fnlft{
+        width:100%;
+        height:100vh;
+        font-size: 15px;
+    }
+    #fnrt{
+        display:none;
+        width:100%;
+    }
+    
+}
+@font-face {
+    font-family: "gilroy";
+    src: url(./fonts/Gilroy-Medium.otf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: "voyage";
+    src: url(./fonts/Voyage-Regular.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: "voyage";
+    src: url(./fonts/Voyage-Bold.ttf);
+    font-weight: 900;
+}
