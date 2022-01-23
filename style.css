@@ -589,8 +589,8 @@ footer img{
     border-radius:50%;
     cursor: pointer;
     z-index: 99;
-    bottom:2%;
-    right:15%;
+    top:5%;
+    right:2%;
 }
 #fnlft{
     height:100vh;
@@ -818,7 +818,7 @@ footer img{
     }
     /* Full NavBar  */
     #fnav>i{
-        bottom:10%;
+        top:10%;
         right:20%;
     }
     .link{
