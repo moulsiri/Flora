@@ -574,7 +574,7 @@ footer img{
     width:100%;
     background-color:#D10017;
     position:absolute;
-    top:-100%;
+    top:0%;
     left:0;
     z-index: 99;
     transition:cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
@@ -588,8 +588,9 @@ footer img{
     background-color: #00000038;
     border-radius:50%;
     cursor: pointer;
-    bottom:10%;
-    right:10%;
+    z-index: 99;
+    bottom:2%;
+    right:15%;
 }
 #fnlft{
     height:100vh;
@@ -604,8 +605,9 @@ footer img{
 }
 .link a{
     color:#fff;
-    text-decoration:none;
-    
+    text-decoration:none;    
+    position: relative;
+    z-index: 9;
     font-size: 4em;
     
 }
@@ -622,6 +624,18 @@ footer img{
     height:100vh;
     width:40%;
     background-color:#00000028;
+    position:relative;
+
+}
+#case{
+    width:70%;
+    height:80%;
+    /* background-color:aquamarine; */
+    position:absolute;
+    background-image: url(https://images.unsplash.com/photo-1613221183345-bf44b7df111e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80);
+    transform: translate(-50%,-50%);
+    left:50%;
+    top:50%;
 }
 .link:first-child{
     margin-top: -6em;
@@ -630,7 +644,8 @@ footer img{
     /* background-color: yellow; */
     /* margin-top: 1em; */
     margin-left:5em;
-    /* position:relative; */
+    position:relative;
+    /* z-index; */
     transform-origin: (-50%,-50%);
     padding:.5em;
 
@@ -645,7 +660,7 @@ footer img{
     transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
     will-change: transition;
     position:absolute;
-    z-index: 7;
+    z-index: 1;
     top:0;
     left:0;
     background-position: center;
@@ -667,6 +682,7 @@ footer img{
     background-image: url(https://images.unsplash.com/photo-1533616688419-b7a585564566?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
     
 }
+
 @media(max-width:500px){
     /* Home  */
     #nav{

@@ -328,29 +328,18 @@ document.querySelector("#gallery").addEventListener("scroll",function(){
 
 
 // Full Screen Navbar Animation 
+let imgSrc=["https://images.unsplash.com/photo-1613800172017-6b2b3787fdb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=415&q=80","https://images.unsplash.com/photo-1616887749458-1b5fcd9f483a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80","https://images.unsplash.com/photo-1494337095615-b5f370aad75f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80","https://images.unsplash.com/photo-1494336850228-54adc1dd87ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"]
 let Cards=document.querySelectorAll(".link");
 Cards.forEach(elm =>{
-  // elm.addEventListener("mousemove",function(dets){
-  //  this.children[1].style.opacity=1;
-  //  console.log(dets);
-  //  this.children[1].style.transform=`translate(${(dets.clientX/3)}px,${(dets.clientY/3)}px)`
-  // })
-  // elm.addEventListener("mouseout",function(dets){
-  //   this.children[1].style.opacity=0;
-  // })
-  elm.addEventListener("mousemove",function(dets){
-    this.children[1].style.opacity=1;
-    // console.log(dets);
-    this.style.position="initial";
-    this.children[1].style.transform=`translate(${(dets.clientX-100)}px,${(dets.clientY-100)}px) rotate(${dets.clientX}deg)`;
-    // this.children[0].style.pointerEvent="none";
-   })
-   elm.addEventListener("mouseout",function(dets){
-     this.children[1].style.opacity=0;
-    // this.children[0].style.pointerEvent="initial";
-    this.style.position="relative";
-
-   })
+ elm.addEventListener("mousemove",function(dets){
+   this.children[1].style.opacity=1;
+   this.children[1].style.transform=`translate(${dets.clientX-200}px,-${dets.clientY/4}px) rotate(${dets.clientX/20}deg)`;
+   document.querySelector("#case").style.backgroundImage=`url(${imgSrc[this.dataset.index]})`;
+ })
+elm.addEventListener("mouseout",function(dets){
+  elm.children[1].style.opacity=0;
+})
+  
   
 })
 
