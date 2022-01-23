@@ -817,6 +817,10 @@ footer img{
         
     }
     /* Full NavBar  */
+    #fnav>i{
+        bottom:10%;
+        right:20%;
+    }
     .link{
         margin-left: 3em;
 
