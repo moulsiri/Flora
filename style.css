@@ -572,7 +572,7 @@ footer img{
 #fnav{
     height:100vh;
     width:100%;
-    background-color:#D10017;
+    /* background-color:#D10017; */
     position:absolute;
     top:-100%;
     left:0;
