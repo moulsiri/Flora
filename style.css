@@ -394,7 +394,7 @@ a{
 }
 #slider{
     height:70vh;
-    /* background-color:red; */
+    background-color:red;
     /* margin-top:3em; */
     white-space: nowrap;
     position: relative;
@@ -403,9 +403,9 @@ a{
 .pelm{
     height: inherit;
     display:inline-block;
-    width:25%;
+    width:300px;
     /* background-color:#fff; */
-    margin-right: 3em;
+    margin-right: 50px;
     background-position: center;
     position:relative;
     background-repeat: no-repeat;

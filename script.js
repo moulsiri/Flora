@@ -51,7 +51,7 @@ Mconnect.to("#mcnct h4",{
     onStart:function(){
         $(function () {
     $('#mcnct h4').textillate({ in: { effect: 'fadeInUp' } });
-});
+        });
     },
     opacity:1
 
@@ -314,7 +314,8 @@ fncls.addEventListener("click",function(){
 
 // ProductShowcase Pics Gallery scrollbar 
 let elm=document.querySelectorAll(".pelm");
-// document.querySelector("#slider").style.width=elm[0].getBoundingClientRect().width*elm.length+"px";
+document.querySelector("#slider").style.width=elm[0].getBoundingClientRect().width*elm.length+"px";
+// console.log(elm[0].getBoundingClientRect().width*elm.length+elm[0].getBoundingClientRect().right*elm.length);
 let curr=document.querySelector("#slider").getBoundingClientRect().x;
 document.querySelector("#gallery").addEventListener("scroll",function(){
   let newPosi=document.querySelector("#slider").getBoundingClientRect().x;
