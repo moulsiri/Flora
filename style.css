@@ -394,7 +394,7 @@ a{
 }
 #slider{
     height:70vh;
-    background-color:red;
+/*     background-color:red; */
     /* margin-top:3em; */
     white-space: nowrap;
     position: relative;
